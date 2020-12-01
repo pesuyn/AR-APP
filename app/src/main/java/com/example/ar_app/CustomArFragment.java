@@ -23,7 +23,7 @@ public class CustomArFragment extends ArFragment {
         this.getArSceneView().setupSession(session);
         return config;
     }
-
+    //su dung camera
     @Override
     protected Set<Session.Feature> getSessionFeatures() {
         return EnumSet.of(Session.Feature.FRONT_CAMERA);
