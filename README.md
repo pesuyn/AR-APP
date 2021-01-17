@@ -19,6 +19,7 @@ Reference:
 
 - ARCore: https://developers.google.com/ar?fbclid=IwAR0Nl0zfCNZLQT124OWW2EAXDPooOJ3zwWLndaU8Er0XuDZgExAvSD55Wo4
 - Augmented Faces: https://developers.google.com/ar/develop/ios/augmented-faces/overview?fbclid=IwAR3S_ejwgiSA2UTpqxkPZEHG93R1lBcrs8xcEfQ5YpgQYMzEfJ5RkEu6flM
+- Samples: https://github.com/nguyenbs/arlabs?fbclid=IwAR3oAnqukw87JMY0O0YkAPGjSH3FBs_S4fjrDe8zJAiuWRjEqhJY-nC94dk
 
 
 ## Deployment environment / System Requirements
