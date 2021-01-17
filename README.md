@@ -1,4 +1,5 @@
 # SE05 - Group09
+# Instructor: Bui Sy Nguyen - Founder and CEO of House3D
 # Project: Research about AR using ARCore
 Authors:
 - Tran Quang Thuy - 18001083 - K63A5 - HUS (Leader)
