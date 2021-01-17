@@ -43,7 +43,12 @@ Reference:
 - Apply filters to real faces
 
 ## Get started
-To build the project, download and open it in Android Studio. All dependencies should automatically be fetched by Android Studio.
-You can check if your device is supported on [this list](https://developers.google.com/ar/discover/#supported_devices).
+- To build the project, download and open it in Android Studio. All dependencies should automatically be fetched by Android Studio.
+- You can check if your device is supported on [this list](https://developers.google.com/ar/discover/#supported_devices).
+- To run the project, connect your phone/tablets and run app 
+
+
+
+
 
 
