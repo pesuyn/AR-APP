@@ -40,12 +40,16 @@ Reference:
 ## Status of the Project
 **Accomplishment**
 - Detection of real faces using ARCore 
+- Created diversity of filters for applying filters to real faces. 
 - Apply filters to real faces
 
 ## Get started
-- To build the project, download and open it in Android Studio. All dependencies should automatically be fetched by Android Studio.
+- To build the project, download or clone and open it in Android Studio. All dependencies should automatically be fetched by Android Studio.
 - You can check if your device is supported on [this list](https://developers.google.com/ar/discover/#supported_devices).
 - To run the project, connect your phone/tablets and run app 
+- While running the app you can switch the filter by choosing another filter in the filters list
+- Wait for the filter to apply on your faces, then take a photo by press on the camera button 
+
 
 
 
