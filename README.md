@@ -29,7 +29,15 @@ Reference:
 **SDK tools for ARCore:**
 - Google APIs Level 28 or later
 
-## Libraries
+**Libraries:**
 - Sceneform (1.15.0)
 
+## Status of the Project
+**What works**
+- Detection of real faces using ARCore 
+- 
+
+## Get started
+To build the project, download and open it in Android Studio. All dependencies should automatically be fetched by Android Studio.
+You can check if your device is supported on [this list](https://developers.google.com/ar/discover/#supported_devices).
 
