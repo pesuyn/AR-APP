@@ -1,7 +1,12 @@
 package com.example.ar_app;
 
+import android.app.Instrumentation;
+import android.content.Context;
+import android.hardware.Camera;
+import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -10,6 +15,7 @@ import androidx.annotation.Nullable;
 
 import com.google.ar.core.Config;
 import com.google.ar.core.Session;
+
 import com.google.ar.sceneform.ux.ArFragment;
 
 import java.util.EnumSet;
@@ -24,6 +30,7 @@ public class CustomArFragment extends ArFragment {
         this.getArSceneView().setupSession(session);
         return config;
     }
+
 
     @Override
     protected Set<Session.Feature> getSessionFeatures() {
@@ -41,5 +48,7 @@ public class CustomArFragment extends ArFragment {
 
         return frameLayout;
     }
+
+
 }
 
