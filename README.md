@@ -34,7 +34,7 @@ Reference:
 - Sceneform (1.15.0)
 
 ## Status of the Project
-**What works**
+**Accomplishment**
 - Detection of real faces using ARCore 
 - Apply filters to real faces
 
