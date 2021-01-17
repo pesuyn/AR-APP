@@ -1,5 +1,6 @@
 # SE05 - Group09
 # Project: Research about AR using ARCore
+Create a face recognization and face augmented application.
 
 Authors:
 
