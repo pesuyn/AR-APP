@@ -12,6 +12,7 @@ Authors:
 
 - Learn about ARCore.
 - Learn about Augmented Faces.
+- Create diversity of filters and using Blender for measuring the size
 - Create a simple AR-APP application, using ARCore to build, display and demo on Android
 
 Reference:
