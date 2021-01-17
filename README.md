@@ -27,7 +27,7 @@ Reference:
 
 **Software:**
 - Android Studio (2.8 or later)
-- Blender 
+- Blender: a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality and computer games.
 
 **SDK tools for ARCore:**
 - Google APIs Level 28 or later
