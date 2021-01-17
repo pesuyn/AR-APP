@@ -12,8 +12,8 @@ Authors:
 
 - Learn about ARCore.
 - Learn about Augmented Faces.
-- Create diversity of filters and using Blender for measuring the size
-- Create a simple AR-APP application, using ARCore to build, display and demo on Android
+- Create diversity of filters and using Blender for measuring the size.
+- Create a simple AR-APP application, using ARCore to build, display and demo on Android.
 
 Reference:
 
@@ -39,16 +39,27 @@ Reference:
 
 ## Status of the Project
 **Accomplishment**
-- Detection of real faces using ARCore 
+- Detection of real faces using ARCore .
 - Created diversity of filters for applying filters to real faces. 
-- Apply filters to real faces
+- Apply filters to real faces.
+
+## Prerequisites
+- You have installed all the Deployment environment/System Requirements.
+- You have a basic understanding of Java.
+
+## Terms & Conditions
+- By downloading the ARCore SDK for Android, you agree that the Google APIs Terms of Service governs your use there of.
+
+## User privacy requirements
+- You must disclose the use of Google Play Services for AR (ARCore) and how it collects and processes data, prominently in your application, easily accessible to users. You can do this by adding the following text on your main menu or notice screen: "This application runs on Google Play Services for AR (ARCore), which is provided by Google LLC and governed by the Google Privacy Policy".
+
 
 ## Get started
 - To build the project, download or clone and open it in Android Studio. All dependencies should automatically be fetched by Android Studio.
 - You can check if your device is supported on [this list](https://developers.google.com/ar/discover/#supported_devices).
-- To run the project, connect your phone/tablets and run app 
-- While running the app you can switch the filter by choosing another filter in the filters list
-- Wait for the filter to apply on your faces, then take a photo by press on the camera button 
+- To run the project, connect your phone/tablets and run app .
+- While running the app you can switch the filter by choosing another filter in the filters list.
+- Wait for the filter to apply on your faces, then take a photo by press on the camera button .
 
 
 
