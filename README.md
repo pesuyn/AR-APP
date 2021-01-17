@@ -19,6 +19,7 @@ Reference:
 
 - ARCore: https://developers.google.com/ar?fbclid=IwAR0Nl0zfCNZLQT124OWW2EAXDPooOJ3zwWLndaU8Er0XuDZgExAvSD55Wo4
 - Augmented Faces: https://developers.google.com/ar/develop/ios/augmented-faces/overview?fbclid=IwAR3S_ejwgiSA2UTpqxkPZEHG93R1lBcrs8xcEfQ5YpgQYMzEfJ5RkEu6flM
+- ArFragment: https://developers.google.com/sceneform/reference/com/google/ar/sceneform/ux/ArFragment?fbclid=IwAR0Pfa2bNvcAG8VPIUhvwO6hX2ei4T_PL4aJ6uzYE6u73ECtX0mOYoK0lE8
 - Samples: https://github.com/nguyenbs/arlabs?fbclid=IwAR3oAnqukw87JMY0O0YkAPGjSH3FBs_S4fjrDe8zJAiuWRjEqhJY-nC94dk
 
 
