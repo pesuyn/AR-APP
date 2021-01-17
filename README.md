@@ -38,12 +38,6 @@ Reference:
 **Tools:**
 - Phone or Tablets are running Android with front-facing camera.
 
-## Status of the Project
-**Accomplishment**
-- Detection of real faces using ARCore .
-- Created diversity of filters for applying filters to real faces. 
-- Apply filters to real faces.
-
 ## Prerequisites
 - You have installed all the Deployment environment/System Requirements.
 - You have a basic understanding of Java.
@@ -53,6 +47,16 @@ Reference:
 
 ## User privacy requirements
 - You must disclose the use of Google Play Services for AR (ARCore) and how it collects and processes data, prominently in your application, easily accessible to users. You can do this by adding the following text on your main menu or notice screen: "This application runs on Google Play Services for AR (ARCore), which is provided by Google LLC and governed by the Google Privacy Policy".
+
+## Status of the Project
+**Accomplishment**
+- Detection of real faces using ARCore .
+- Created diversity of filters for applying filters to real faces. 
+- Apply filters to real faces.
+
+## Unsolved Problems
+- ARCore session is not restarting
+- Unable to take a photo/screenshot 
 
 
 ## Get started
