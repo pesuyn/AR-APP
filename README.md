@@ -21,7 +21,7 @@ Reference:
 - Augmented Faces: https://developers.google.com/ar/develop/ios/augmented-faces/overview?fbclid=IwAR3S_ejwgiSA2UTpqxkPZEHG93R1lBcrs8xcEfQ5YpgQYMzEfJ5RkEu6flM
 
 
-## Deployment environment
+## Deployment environment / System Requirements
 
 **Software:**
 - Android Studio (2.8 or later)
@@ -36,7 +36,7 @@ Reference:
 ## Status of the Project
 **What works**
 - Detection of real faces using ARCore 
-- Apply Sticker to real faces
+- Apply filters to real faces
 
 ## Get started
 To build the project, download and open it in Android Studio. All dependencies should automatically be fetched by Android Studio.
