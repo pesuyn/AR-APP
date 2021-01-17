@@ -43,6 +43,7 @@ Authors:
 - Detection of real faces using ARCore .
 - Created diversity of models for applying models to real faces. 
 - Apply models to real faces.
+- Selected list of models
 
 ## Unsolved Problems
 - ARCore session is not restarting
