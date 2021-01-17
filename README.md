@@ -1,6 +1,5 @@
 # SE05 - Group09
 # Project: Research about AR using ARCore
-Create a face recognization and face augmented application.
 
 Authors:
 
@@ -14,7 +13,7 @@ Authors:
 - Learn about ARCore.
 - Learn about Augmented Faces.
 - Create diversity of filters and using Blender for measuring the size.
-- Create a simple AR-APP application, using ARCore to build, display and demo on Android.
+- Create a simple face-augmented application, using ARCore to build, display and demo on Android.
 
 Reference:
 
