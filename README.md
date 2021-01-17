@@ -33,6 +33,9 @@ Reference:
 **Libraries:**
 - Sceneform (1.15.0)
 
+**Tools:**
+-Phone or Tablets are running Android with front-facing camera.
+
 ## Status of the Project
 **Accomplishment**
 - Detection of real faces using ARCore 
