@@ -47,14 +47,6 @@ public class MainActivity extends AppCompatActivity {
     private ArFragment arFragment;
 
 
-    View arrayView[];
-    ViewRenderable name_object;
-    int selected = 1;
-//    private ModelRenderable
-
-
-
-
     private static final int MASK[] = {
             R.id.no_filter,
             R.id.hair,
@@ -86,9 +78,8 @@ public class MainActivity extends AppCompatActivity {
         ImageButton no_filter = (ImageButton) findViewById(R.id.no_filter);
         no_filter.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v2) {
-                findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background);
-                typeFace = 0;
-                findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background_select);
+               Intent intent = new Intent(MainActivity.this,MainActivity.class);
+               startActivity(intent);
             }
         });
 
@@ -96,19 +87,17 @@ public class MainActivity extends AppCompatActivity {
         op.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background);
-                typeFace = 2;
+                typeFace = 9;
                 findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background_select);
-                getFilter();
+                getFilter_op();
             }
         });
-
         ImageButton mask2 = (ImageButton) findViewById(R.id.mask2);
         mask2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background);
                 typeFace = 9;
                 findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background_select);
-
                 getFilter1();
             }
         });
@@ -117,10 +106,36 @@ public class MainActivity extends AppCompatActivity {
         snap.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v1) {
                 findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background);
-                typeFace = 3;
+                typeFace = 9;
                 findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background_select);
-                getFilter1();
-
+                getFilter_Fox();
+            }
+        });
+        ImageButton hair = (ImageButton) findViewById(R.id.hair);
+        hair.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v1) {
+                findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background);
+                typeFace = 9;
+                findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background_select);
+                getFilter_hair();
+            }
+        });
+        ImageButton glasses = (ImageButton) findViewById(R.id.glasses2);
+        glasses .setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v1) {
+                findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background);
+                typeFace = 9;
+                findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background_select);
+                getFilter_glasses();
+            }
+        });
+        ImageButton dog = (ImageButton) findViewById(R.id.dog);
+        dog .setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v1) {
+                findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background);
+                typeFace = 9;
+                findViewById(MASK[typeFace]).setBackgroundResource(R.drawable.round_background_select);
+                getFilter();
             }
         });
 
@@ -131,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
         CustomArFragment customARFragment = (CustomArFragment) getSupportFragmentManager().findFragmentById(R.id.ARFragment);
 
         final CompletableFuture<Void> voidCompletableFuture = ModelRenderable.builder()
-                .setSource(this, R.raw.fox_face)
+                .setSource(this, R.raw.mask)
                 .build()
                 .thenAccept(renderable -> {
                     modelRenderable = renderable;
@@ -141,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
                 });
 
         Texture.builder()
-                .setSource(this, R.drawable.snap)
+                .setSource(this, R.drawable.dog3)
                 .build()
                 .thenAccept(texture -> this.texture =texture );
 
@@ -172,11 +187,188 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void getFilter_hair() {
+        CustomArFragment customARFragment = (CustomArFragment) getSupportFragmentManager().findFragmentById(R.id.ARFragment);
+
+        final CompletableFuture<Void> voidCompletableFuture = ModelRenderable.builder()
+                .setSource(this, R.raw.cat)
+                .build()
+                .thenAccept(renderable -> {
+                    modelRenderable = renderable;
+
+                    modelRenderable.setShadowReceiver(false);
+                    modelRenderable.setShadowCaster(false);
+                });
+
+        Texture.builder()
+                .setSource(this, R.drawable.hair)
+                .build()
+                .thenAccept(texture -> this.texture =texture );
+
+        customARFragment.getArSceneView().setCameraStreamRenderPriority(Renderable.RENDER_PRIORITY_FIRST);
+
+        customARFragment.getArSceneView().getScene().addOnUpdateListener(frameTime -> {
+
+            if(modelRenderable == null && texture == null)
+                return;
+
+            Frame frame = customARFragment.getArSceneView().getArFrame();
+
+            Collection<AugmentedFace> augmentedFaces = frame.getUpdatedTrackables(AugmentedFace.class);
+
+            for (AugmentedFace augmentedFace : augmentedFaces) {
+                if(isAdded)
+                    return;
+
+                AugmentedFaceNode augmentedFaceNode = new AugmentedFaceNode(augmentedFace);
+                augmentedFaceNode.setParent(customARFragment.getArSceneView().getScene());
+                augmentedFaceNode.setFaceRegionsRenderable(modelRenderable);
+                augmentedFaceNode.setFaceMeshTexture(texture);
+
+                isAdded = true;
+            }
+
+
+        });
+    }
+
+    private void getFilter_op() {
+        CustomArFragment customARFragment = (CustomArFragment) getSupportFragmentManager().findFragmentById(R.id.ARFragment);
+
+        final CompletableFuture<Void> voidCompletableFuture = ModelRenderable.builder()
+                .setSource(this, R.raw.mask)
+                .build()
+                .thenAccept(renderable -> {
+                    modelRenderable = renderable;
+
+                    modelRenderable.setShadowReceiver(false);
+                    modelRenderable.setShadowCaster(false);
+                });
+
+        Texture.builder()
+                .setSource(this, R.drawable.op2)
+                .build()
+                .thenAccept(texture -> this.texture =texture );
+
+        customARFragment.getArSceneView().setCameraStreamRenderPriority(Renderable.RENDER_PRIORITY_FIRST);
+
+        customARFragment.getArSceneView().getScene().addOnUpdateListener(frameTime -> {
+
+            if(modelRenderable == null && texture == null)
+                return;
+
+            Frame frame = customARFragment.getArSceneView().getArFrame();
+
+            Collection<AugmentedFace> augmentedFaces = frame.getUpdatedTrackables(AugmentedFace.class);
+
+            for (AugmentedFace augmentedFace : augmentedFaces) {
+                if(isAdded)
+                    return;
+
+                AugmentedFaceNode augmentedFaceNode = new AugmentedFaceNode(augmentedFace);
+                augmentedFaceNode.setParent(customARFragment.getArSceneView().getScene());
+                augmentedFaceNode.setFaceRegionsRenderable(modelRenderable);
+                augmentedFaceNode.setFaceMeshTexture(texture);
+
+                isAdded = true;
+            }
+
+
+        });
+    }
+    private void getFilter_Fox() {
+        CustomArFragment customARFragment = (CustomArFragment) getSupportFragmentManager().findFragmentById(R.id.ARFragment);
+
+        final CompletableFuture<Void> voidCompletableFuture = ModelRenderable.builder()
+                .setSource(this, R.raw.fox_face)
+                .build()
+                .thenAccept(renderable -> {
+                    modelRenderable = renderable;
+
+                    modelRenderable.setShadowReceiver(false);
+                    modelRenderable.setShadowCaster(false);
+                });
+
+        Texture.builder()
+                .setSource(this, R.drawable.fox_face_mesh_texture)
+                .build()
+                .thenAccept(texture -> this.texture =texture );
+
+        customARFragment.getArSceneView().setCameraStreamRenderPriority(Renderable.RENDER_PRIORITY_FIRST);
+
+        customARFragment.getArSceneView().getScene().addOnUpdateListener(frameTime -> {
+
+            if(modelRenderable == null && texture == null)
+                return;
+
+            Frame frame = customARFragment.getArSceneView().getArFrame();
+
+            Collection<AugmentedFace> augmentedFaces = frame.getUpdatedTrackables(AugmentedFace.class);
+
+            for (AugmentedFace augmentedFace : augmentedFaces) {
+                if(isAdded)
+                    return;
+
+                AugmentedFaceNode augmentedFaceNode = new AugmentedFaceNode(augmentedFace);
+                augmentedFaceNode.setParent(customARFragment.getArSceneView().getScene());
+                augmentedFaceNode.setFaceRegionsRenderable(modelRenderable);
+                augmentedFaceNode.setFaceMeshTexture(texture);
+
+                isAdded = true;
+            }
+
+
+        });
+    }
+    private void getFilter_glasses() {
+        CustomArFragment customARFragment = (CustomArFragment) getSupportFragmentManager().findFragmentById(R.id.ARFragment);
+
+        final CompletableFuture<Void> voidCompletableFuture = ModelRenderable.builder()
+                .setSource(this, R.raw.mask)
+                .build()
+                .thenAccept(renderable -> {
+                    modelRenderable = renderable;
+
+                    modelRenderable.setShadowReceiver(false);
+                    modelRenderable.setShadowCaster(false);
+                });
+
+        Texture.builder()
+                .setSource(this, R.drawable.glasses2)
+                .build()
+                .thenAccept(texture -> this.texture =texture );
+
+        customARFragment.getArSceneView().setCameraStreamRenderPriority(Renderable.RENDER_PRIORITY_FIRST);
+
+        customARFragment.getArSceneView().getScene().addOnUpdateListener(frameTime -> {
+
+            if(modelRenderable == null && texture == null)
+                return;
+
+            Frame frame = customARFragment.getArSceneView().getArFrame();
+
+            Collection<AugmentedFace> augmentedFaces = frame.getUpdatedTrackables(AugmentedFace.class);
+
+            for (AugmentedFace augmentedFace : augmentedFaces) {
+                if(isAdded)
+                    return;
+
+                AugmentedFaceNode augmentedFaceNode = new AugmentedFaceNode(augmentedFace);
+                augmentedFaceNode.setParent(customARFragment.getArSceneView().getScene());
+                augmentedFaceNode.setFaceRegionsRenderable(modelRenderable);
+                augmentedFaceNode.setFaceMeshTexture(texture);
+
+                isAdded = true;
+            }
+
+
+        });
+    }
     private void getFilter1() {
         CustomArFragment customARFragment = (CustomArFragment) getSupportFragmentManager().findFragmentById(R.id.ARFragment);
 
         ModelRenderable.builder()
-                .setSource(this, R.raw.fox_face)
+                .setSource(this, R.raw.mario_hat)
                 .build()
                 .thenAccept(renderable -> {
                     modelRenderable = renderable;
