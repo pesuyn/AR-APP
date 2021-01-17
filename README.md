@@ -3,7 +3,7 @@
 
 Authors:
 
-- Tran Quang Thuy - 18001083 - K63A5 - HUS
+- Tran Quang Thuy - 18001083 - K63A5 - HUS (Leader)
 - Do Huu Quang - 18001068 - K63A5 - HUS
 - Ha Quoc Viet - 18001084 - K63A5 - HUS
 - Hoang Trung Kien - 18001048 - K63A5 - HUS
