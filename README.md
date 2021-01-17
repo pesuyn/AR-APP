@@ -1,27 +1,16 @@
 # SE05 - Group09
 # Project: Research about AR using ARCore
-
 Authors:
-
 - Tran Quang Thuy - 18001083 - K63A5 - HUS (Leader)
 - Do Huu Quang - 18001068 - K63A5 - HUS
 - Ha Quoc Viet - 18001084 - K63A5 - HUS
 - Hoang Trung Kien - 18001048 - K63A5 - HUS
 
 ## Introduction and goal of the project:
-
 - Learn about ARCore.
 - Learn about Augmented Faces.
-- Create diversity of filters and using Blender for measuring the size.
-- Create a simple face-augmented application, using ARCore to build, display and demo on Android.
-
-Reference:
-
-- ARCore: https://developers.google.com/ar?fbclid=IwAR0Nl0zfCNZLQT124OWW2EAXDPooOJ3zwWLndaU8Er0XuDZgExAvSD55Wo4
-- Augmented Faces: https://developers.google.com/ar/develop/ios/augmented-faces/overview?fbclid=IwAR3S_ejwgiSA2UTpqxkPZEHG93R1lBcrs8xcEfQ5YpgQYMzEfJ5RkEu6flM
-- ArFragment: https://developers.google.com/sceneform/reference/com/google/ar/sceneform/ux/ArFragment?fbclid=IwAR0Pfa2bNvcAG8VPIUhvwO6hX2ei4T_PL4aJ6uzYE6u73ECtX0mOYoK0lE8
-- Samples: https://github.com/nguyenbs/arlabs?fbclid=IwAR3oAnqukw87JMY0O0YkAPGjSH3FBs_S4fjrDe8zJAiuWRjEqhJY-nC94dk
-
+- Create diversity of models and using Blender for measuring the size.
+- Create a simple face-augmented application, using ARCore to build, apply models, display and demo on Android.
 
 ## Deployment environment / System Requirements
 
@@ -51,8 +40,8 @@ Reference:
 ## Status of the Project
 **Accomplishment**
 - Detection of real faces using ARCore .
-- Created diversity of filters for applying filters to real faces. 
-- Apply filters to real faces.
+- Created diversity of models for applying models to real faces. 
+- Apply models to real faces.
 
 ## Unsolved Problems
 - ARCore session is not restarting
@@ -63,8 +52,14 @@ Reference:
 - To build the project, download or clone and open it in Android Studio. All dependencies should automatically be fetched by Android Studio.
 - You can check if your device is supported on [this list](https://developers.google.com/ar/discover/#supported_devices).
 - To run the project, connect your phone/tablets and run app .
-- While running the app you can switch the filter by choosing another filter in the filters list.
-- Wait for the filter to apply on your faces, then take a photo by press on the camera button .
+- While running the app you can switch the models by choosing another models in the models list.
+- Wait for the models to apply on your faces, then take a photo by press on the camera button.
+
+## Reference:
+- ARCore: https://developers.google.com/ar?fbclid=IwAR0Nl0zfCNZLQT124OWW2EAXDPooOJ3zwWLndaU8Er0XuDZgExAvSD55Wo4
+- Augmented Faces: https://developers.google.com/ar/develop/ios/augmented-faces/overview?fbclid=IwAR3S_ejwgiSA2UTpqxkPZEHG93R1lBcrs8xcEfQ5YpgQYMzEfJ5RkEu6flM
+- ArFragment: https://developers.google.com/sceneform/reference/com/google/ar/sceneform/ux/ArFragment?fbclid=IwAR0Pfa2bNvcAG8VPIUhvwO6hX2ei4T_PL4aJ6uzYE6u73ECtX0mOYoK0lE8
+- Samples: https://github.com/nguyenbs/arlabs?fbclid=IwAR3oAnqukw87JMY0O0YkAPGjSH3FBs_S4fjrDe8zJAiuWRjEqhJY-nC94dk
 
 
 
