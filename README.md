@@ -1,5 +1,5 @@
 # SE05 - Group09
-# Project: Learn about AR using ARCore
+# Project: Research about AR using ARCore
 
 Authors:
 
@@ -35,7 +35,7 @@ Reference:
 ## Status of the Project
 **What works**
 - Detection of real faces using ARCore 
-- 
+- Apply Sticker to real faces
 
 ## Get started
 To build the project, download and open it in Android Studio. All dependencies should automatically be fetched by Android Studio.
