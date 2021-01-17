@@ -33,7 +33,7 @@ Reference:
 - Google APIs Level 28 or later
 
 **Libraries:**
-- Sceneform (1.15.0)
+- Sceneform (1.15.0): Allows you import and view 3D models (in such formats as .obj, .fbx or .glTF) and then render realistic 3D scenes for ARCore apps or VR apps, without having to learn OpenGL. Sceneform includes a high-level Scene Graph API, a Physically Based Renderer (PBR) provided by Filament and Android Studio plugin for building 3D assets. ARCore is not able to import and render 3D models. ARCore is made for tracking and scene understanding stages.
 
 **Tools:**
 - Phone or Tablets are running Android with front-facing camera.
