@@ -54,7 +54,8 @@ Authors:
 - To build the project, download or clone and open it in Android Studio. All dependencies should automatically be fetched by Android Studio.
 - You can check if your device is supported on [this list](https://developers.google.com/ar/discover/#supported_devices).
 - To run the project, connect your phone/tablets and run app .
-- While running the app you can switch the models by choosing another models in the models list.
+- While running the app you can choose models in the models list.
+- To change the model, select "no filter" and then choose the models you want to use.
 - Wait for the models to apply on your faces, then take a photo by press on the camera button.
 
 ## Reference:
